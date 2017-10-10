@@ -10,8 +10,8 @@ class Track extends React.Component {
     return (
       <div className="Track">
         <div className="Track-information">
-          <h3>TRACK NAME</h3>
-          <p>TRACK ARTIST | TRACK ALBUM</p>
+          <h3>{this.props.track.name}</h3>
+          <p>{this.props.track.artist} | {this.props.track.album}</p>
         </div>
         <a className="Track-action">{this.renderAction}</a>
       </div>
