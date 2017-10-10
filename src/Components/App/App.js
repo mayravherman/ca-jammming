@@ -24,6 +24,24 @@ class App extends React.Component {
           artist: 'Rockabye Baby!',
           album: 'Lullaby Renditions of Elton John'
         }
+      ],
+      playlistName: 'Best Playlist Ever',
+      playlistTracks: [
+        {
+          name: 'Stronger',
+          artist: 'Britney Spears',
+          album: 'Oops!... I Did It Again'
+        },
+        {
+          name: 'So Emotional',
+          artist: 'Whitney Houston',
+          album: 'Whitney'
+        },
+        {
+          name: `It's Not Right But It's Okay`,
+          artist: 'Whitney Houston',
+          album: 'My Love Is Your Love'
+        }
       ]
     };
   }
@@ -35,8 +53,11 @@ class App extends React.Component {
         <div className="App">
           <SearchBar />
           <div className="App-playlist">
-            <SearchResults searchResults={this.state.searchResults} />
-            <Playlist />
+            <SearchResults
+              searchResults={this.state.searchResults} />
+            <Playlist
+              playlistName={this.state.playlistName}
+              playlistTracks={this.state.playlistTracks} />
           </div>
         </div>
       </div>
