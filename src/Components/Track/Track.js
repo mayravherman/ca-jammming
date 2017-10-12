@@ -8,7 +8,7 @@ class Track extends React.Component {
     this.removeTrack = this.removeTrack.bind(this);
   }
 
-  addTrack() {
+  addTrack(event) {
     this.props.onAdd(this.props.track);
   }
 
