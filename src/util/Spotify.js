@@ -1,6 +1,6 @@
 // Spotify API Info
 const clientId = '2fa4135652ac4780aec04bb85aa16c3f';
-const redirectUri = 'http://localhost:3000/';
+const redirectUri = 'http://makorepo.surge.sh';
 
 let accessToken;
 
